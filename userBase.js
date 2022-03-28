@@ -1,11 +1,12 @@
-const User = require('./user')
+import { User } from './user.js'
+//const User = require('./user')
 
 class UserBase {
   constructor(users) {
     this.users = users;
   }
   count() {
-    return this.users.length
+    return this.users.length;
   }
 
   getNames() {
