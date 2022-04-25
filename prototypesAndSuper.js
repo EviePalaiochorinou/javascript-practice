@@ -31,9 +31,9 @@ let basketProto = {
 
     removeFromBasket(index) {
       if ( typeof index !== 'number' || index < 0 || index >= this.items.length ) return;
-      this.items.pop(index);
+      this.items.splice(index);
       super.removeFromBasket(this.itemPrice);
     }
   };
-  
+
   Object.setPrototypeOf( myBasket, basketProto );
